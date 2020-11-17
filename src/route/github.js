@@ -10,7 +10,6 @@ module.exports = router
       }).then(r => {
         res.send(r)
       }).catch(e => {
-        console.log(e)
         res.status(400).send(e.message)
       })
     }).get('/', (req, res, next) => {
@@ -18,7 +17,6 @@ module.exports = router
           .then(r => {
             res.send(r.rows)
           }).catch(e => {
-        console.log(e)
         res.status(400).send(e.message)
       })
     }).get('/:id', (req, res, next) => {
@@ -27,7 +25,6 @@ module.exports = router
           .then(r => {
             res.send(r.rows)
           }).catch(e => {
-        console.log(e)
         res.status(400).send(e.message)
       })
     })
