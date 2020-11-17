@@ -1,0 +1,15 @@
+dev: true
+
+project_name: 'node-postgre-sql'
+
+postgre:
+  user: 'tony'
+  host: 'localhost'
+  database: 'demonode'
+  password: '123'
+  port: 5432
+
+connection:
+  port: 5001
+  host: localhost
+
